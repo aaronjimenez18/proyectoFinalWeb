@@ -4,7 +4,7 @@ session_start();
  $usuario = $_POST['nombre_usuario'];
  $password =$_POST['password'];
 
-$q = "SELECT COUNT(*) as contar FROM users WHERE username ='$usuario' AND password ='$password'";
+$q = "SELECT COUNT(*) as contar FROM login WHERE username ='$usuario' AND password ='$password'";
 
 $consulta = mysqli_query($conn,$q);
 
