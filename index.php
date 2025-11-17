@@ -10,27 +10,37 @@
 </head>
 <body>
 
-<div class="container" id="container">
+<div class="login-wrapper">
 
-    <div class="form-container sign-in">
-        <form action="./Logica/validar.php" method="POST">
-            <h1>Iniciar sesión</h1>
-            <label for="nombre_usuario">Nombre de Usuario</label>
-            <input type="text" id="nombre_usuario" name="nombre_usuario" required>
+    <div class="login-left">
+        <div class="login-card">
 
-            <br>
+            <h4 class="brand-title">
+                <i class="material-icons gold-text">school</i> Login
+            </h4>
 
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" required>
+            <p class="login-subtitle">Iniciar Sesión</p>
 
-            <br>
+            <form action="./Logica/validar.php" method="POST">
 
-            <button type="submit">Iniciar Sesión</button>
-        </form>
+                <input type="text" id="usuario" name="nombre_usuario" placeholder="Usuario" required>
+
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+
+                <button class="btn login-btn" type="submit">
+                    Iniciar Sesión
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <div class="login-right">
+        <img src="https://www.unam.mx/sites/default/files/images/unam.svg" class="side-img">
     </div>
 
 </div>
 
-<script src="script.js"></script>
 </body>
 </html>
