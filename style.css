@@ -1,7 +1,7 @@
 /* ==================== ESTILOS GENERALES ==================== */
 
 body {
-  background-color: #f5f6fa;
+  background-color: #a58223ef;
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ body {
 h1,
 h3 {
   font-weight: 500;
-  color: #2c3e50;
+  color: #000000;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -33,7 +33,7 @@ table {
 }
 
 thead {
-  background-color: #1976d2;
+  background-color: #021e47;
   color: white;
 }
 
@@ -58,11 +58,13 @@ tr:nth-child(even) {
 .btn {
   text-transform: none;
   border-radius: 6px;
-  margin: 2px;
+  margin: 5px 5px 20px 5px;
   transition: background-color 0.2s ease, transform 0.2s ease;
-  padding: 8px 16px;
+  padding: 8px 16px;  
   color: #fff;
-  display: inline-block;
+  display: inline-flex;   
+  align-items: center;  
+  justify-content: center;
   border: none;
   cursor: pointer;
 }
@@ -72,10 +74,10 @@ tr:nth-child(even) {
 }
 
 .btn-editar {
-  background-color: #1976d2;
+  background-color: #5ac712;
 }
 .btn-editar:hover {
-  background-color: #1565c0;
+  background-color: #5ac712;
 }
 
 .btn-eliminar {
@@ -117,57 +119,82 @@ input:focus {
   border-bottom: 2px solid #0d47a1;
 }
 
-/* ==================== LOGIN ==================== */
-
-#container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 20px;
+/* CONTENEDOR PRINCIPAL: DOS COLUMNAS */
+.login-wrapper {
+    display: flex;
+    height: 100vh;
+    background: rgb(139, 105, 30);
 }
 
-.form-container {
-  background-color: #ffffff;
-  padding: 40px 50px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  width: 400px;
-  max-width: 100%;
+/* IZQUIERDA: FORMULARIO */
+.login-left {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 
-.form-container h1 {
-  text-align: center;
-  margin-bottom: 25px;
-  color: #1976d2;
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    width: 380px;
 }
 
-.form-container label {
-  display: block;
-  margin-top: 15px;
-  color: #333;
+.left-content {
+    width: 100%;
+    max-width: 350px;
 }
 
-.form-container button {
-  width: 100%;
-  margin-top: 20px;
-  background-color: #1976d2;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.2s;
+.brand-title {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.form-container button:hover {
-  background-color: #1565c0;
+.login-title {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.login-btn {
+  background-color: #021e47;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 0 !important;             
+    height: 45px !important;            
+    line-height: 45px !important;       
+    font-size: 16px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;    
+}
+
+/* DERECHA: IMAGEN */
+.login-right {
+    width: 55%;
+    background: #021e47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.side-img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ==================== REGISTRO ==================== */
 
 .formulario {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -186,7 +213,7 @@ input:focus {
 
 .boton-enviar {
   display: inline-block;
-  background-color: #2e7d32;
+  background-color: #518347;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -214,12 +241,25 @@ input:focus {
   font-weight: 500;
 }
 
+.mensaje-error {
+  background-color: #ffcdd2;
+  color: #c62828;           
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
 /* ==================== ENLACES ==================== */
 
 a {
   display: inline-block;
-  margin-top: 20px;
-  color: #1976d2;
+  font-size: 20px; 
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 550px;
+  color: #021e47;
   text-decoration: none;
 }
 
@@ -287,3 +327,5 @@ a:hover {
     font-size: 1.4rem;
   }
 }
+
+
